@@ -1,6 +1,9 @@
-//output:
+//Q.1 WAP to print all even numbers from a given range using UDF.
+//input:
 //	
 //	Enter any number: 10
+//output
+
 //	Even number is : 2 4 6 8 10
 
 #include<stdio.h>

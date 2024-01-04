@@ -1,3 +1,5 @@
+//Q.2 WAP to find a square of all elements from a given 1D array.
+
 //input:
 //	
 //	Enter ary size: 5

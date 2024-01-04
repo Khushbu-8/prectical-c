@@ -1,3 +1,4 @@
+//Q.4 WAP to print all even numbers from a given 2D array using Pointer.
 //output:
 //	
 //	Enter any number: 10
@@ -8,44 +9,28 @@
 
 
  void main(){
- 	
- 	int row;
- 	int col;
- 	int i;
- 	int j;
- 	
- 	printf("Enter row :");
- 	scanf("%d",&row);
-	printf("Enter col :");
- 	scanf("%d",&col);
-	  
- 	int a[row][col];
- 	int b[row][col];
-    int c[row][col];
-	 	
- 	for(i=0; i<row; i++){
- 		for (j=1;j<=col; j++){
- 			printf("Enter a[%d][%d] :",i,j);
- 			scanf("%d",&a[i][j]);
-		 }
-	 }
-
-        for(i=0; i<row; i++){
- 		for (j=1;j<=col; j++){
- 			printf("Enter b[%d][%d] :",i,j);
- 			scanf("%d",&b[i][j]);
-		 }
-	 }	 
-	 	
- 		printf("Even number is :");
- 	for (i=0; i<=row; i++){
- 	    for (j=0; j<=col; j++){
- 	    		if(i%2==0){
- 			printf("%d ",i);
-		 }
-		 }
-	 }
- 
- 
- 	
- }
+	int n,i;
+	
+	printf("Enter size of array:");
+	scanf("%d",&n);
+	
+	int a[n];
+	int *ptr[n];
+	
+	for(i=0;i<n;i++)
+	{
+	  printf("Enter a[%d]",i);
+      scanf("%d",&a[i]);
+      ptr[i]=&a[i];
+	}
+	
+	printf("Even numbers from array:");
+	for(i=0;i<n;i++){
+		if(*ptr[i]%2==0){
+			printf("%d,",*ptr[i]);
+			
+		}	
+	}
+	
+	
+}
