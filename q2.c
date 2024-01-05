@@ -11,7 +11,7 @@
 
 //output
 
-//cube is : 1 8 27 64 125
+//square is : 1 4 9 16 25
 
 
 //
@@ -28,13 +28,14 @@ void main ()
 	int i;
 	
 	for(i=0;i<n;i++){
-		printf("a[%d] => ",i);
+		printf("a[%d] : ",i);
 		scanf("%d",&a[i]);
 	}
-	printf("\n");
+	
+	
 	for(i=0;i<n;i++){
-		a[i] = a[i] * a[i] * a[i];
-		printf("%d\t",a[i]);
+		a[i] = a[i] * a[i];
+		printf("%d",a[i]);
 	}
 	
 }
